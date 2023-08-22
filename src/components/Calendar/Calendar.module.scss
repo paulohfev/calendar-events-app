@@ -1,0 +1,89 @@
+.container {
+  color: var(--color-white);
+
+  .month-navigation-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+
+    .navigation-button {
+      height: 24px;
+      padding: 0;
+      min-width: fit-content;
+      width: 24px;
+    }
+
+    .navigation-icon {
+      height: 18px;
+      width: 18px;
+    }
+
+    .navigation-separator {
+      height: 6px;
+      margin: 0 5px 0 3px;
+      width: 6px;
+    }
+  }
+
+  .week-day {
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0 15px 15px;
+    text-transform: uppercase;
+  }
+  
+  .calendar-day {
+    cursor: pointer;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 500;
+    height: 52px;
+    text-align: center;
+    width: 52px;
+  }
+
+  .selected-calendar-day {
+    align-items: center;
+    animation: pop 0.3s linear 1;
+    background: linear-gradient(90deg, #FF465D 0%, #BC46BA 100%);
+    border-radius: 50%;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 36px;
+  }
+
+  @keyframes pop{
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .year-title {
+    font-family: 'Lato';
+    font-size: 80px;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .month-title {
+    font-family: 'Lato';
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0 0 60px;
+    text-align: center;
+  }
+
+  .calendar-table-header {
+    padding-bottom: 10px;
+  }
+  
+  .calendar-table {
+    margin: 0 auto;
+  }
+}

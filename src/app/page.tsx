@@ -1,4 +1,5 @@
 import { Box, Container } from '@mui/material';
+import CalendarView from '@/components/CalendarView';
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         }}
       >
         <Container>
-          <h1>Home Page</h1>
+          <CalendarView />
         </Container>
       </Box>
     </main>
