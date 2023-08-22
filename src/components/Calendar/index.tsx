@@ -94,11 +94,11 @@ const Calendar: React.FC<Props> = ({ dateObject, handleSelectedDate, selectedDat
 
       <div className={styles['month-navigation-buttons']}>
         <Button className={styles['navigation-button']} onClick={() => backTrackOneMonth()} variant="ghost">
-          <ArrowBackIos color="white" className={styles['navigation-icon']} />
+          <ArrowBackIos htmlColor="white" className={styles['navigation-icon']} />
         </Button>
         <Circle className={styles['navigation-separator']} />
         <Button className={styles['navigation-button']} onClick={() => forwardOneMonth()} variant="ghost">
-          <ArrowForwardIos color="white" className={styles['navigation-icon']} />
+          <ArrowForwardIos htmlColor="white" className={styles['navigation-icon']} />
         </Button>
       </div>
 
