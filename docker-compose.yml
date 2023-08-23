@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    container_name: calendar-events-app-dev
+    image: calendar-events-app-dev
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/app/src
+    stdin_open: true
+    ports:
+      - 3000:3000
